@@ -12,8 +12,10 @@ export default class SearchResults extends React.Component {
                         <div key={`movie-item-${index}`}>
                             <h5>Movie Title</h5>
                             <h4>{movieItem.name}</h4>
-                            <div>{movieItem.image}</div>
-                           
+
+                            <div><img src={movieItem.image} alt={movieItem.name} /></div>
+
+
                         </div>
                     )
                 })}
